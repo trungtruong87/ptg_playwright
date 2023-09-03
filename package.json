@@ -1,0 +1,28 @@
+{
+  "name": "PTG-Playwright",
+  "version": "1.0.0",
+  "description": "Automated software testing with Playwright",
+  "main": "index.js",
+  "scripts": {
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
+    "tests:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+    "tests:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium"
+  },
+  "author": "Trung Truong",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.36.2",
+    "@types/node": "^20.5.7",
+    "allure": "^0.0.0",
+    "dotenv": "^16.3.1",
+    "moment": "^2.29.4",
+    "prettier": "^2.5.0",
+    "randomstring": "^1.3.0",
+    "string-format": "^2.0.0",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "allure-playwright": "^2.6.0"
+  }
+}
